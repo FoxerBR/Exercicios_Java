@@ -1,0 +1,46 @@
+package exercicio04;
+
+import java.util.Scanner;
+
+//Ler quatro valores numéricos inteiros e apresentar o resultado dois a dois da adição e multiplicação entre os 
+//valores lidos, baseando-se na utilização do conceito de propriedade distributiva. Dica: se forem lidas as variáveis 
+//A, B, C e D, devem ser somados e multiplicados os valores de A com B, A com C e A com D; depois B com C, B 
+//com D e por último C com D. Note que para cada operação serão utilizadas seis combinações. Assim sendo, 
+//devem ser realizadas doze operações de processamento, sendo seis para as adições e seis para as 
+//multiplicações. 
+
+public class exercicio04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+//		System.out.println("Informe o primeiro número: ");
+//		int a = sc.nextInt();
+//		System.out.println("Informe o segundo número: ");
+//		int b = sc.nextInt();
+//		System.out.println("Informe o terceiro número: ");
+//		int c = sc.nextInt();
+//		System.out.println("Informe o quarto número: ");
+//		int d = sc.nextInt();
+		
+		int res1 = a + b;
+		int res2 = a + c;
+		int res3 = a + d;
+		int res4 = b + c;
+		int res5 = b + d;
+		int res6 = c + d;
+		
+		int res7 = a * b;
+		int res8 = a * c;
+		int res9 = a * d;
+		int res10 = b * c;
+		int res11 = b * d;
+		int res12 = c * d;
+		
+		System.out.println("=========== Resultados ============");
+		System.out.println("=========== Adição ==========");
+		
+		sc.close();
+	}
+
+}
