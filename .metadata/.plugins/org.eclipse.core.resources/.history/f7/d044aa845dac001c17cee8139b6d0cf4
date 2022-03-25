@@ -1,0 +1,35 @@
+package exercicio03;
+
+import java.util.Scanner;
+
+//Faça um programa para pagamento de comissão de vendedores de peças, levando-se em consideração que sua 
+//comissão será de 5% do total da venda e que você tem os seguintes dados: 
+//- Identificação do vendedor 
+//- Código da peça 
+//- Preço unitário da peça 
+//- Quantidade vendida
+
+public class exercicio03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("ID Vendedor: ");
+		int id = sc.nextInt();
+		System.out.print("COD Item: ");
+		int cod = sc.nextInt();
+		System.out.print("Preço UNID: ");
+		double unid = sc.nextDouble();
+		System.out.print("Quantidade vendida: ");
+		int qntVend = sc.nextInt();
+		
+		double comissao = 0.05;
+		
+		System.out.println("==== Comissão ====");
+		double sum = qntVend * comissao;
+		System.out.println("Total comissão R$ "+String.format("%.2f", sum));
+		
+		sc.close();
+	}
+
+}
