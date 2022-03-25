@@ -1,0 +1,25 @@
+package exercicio01;
+
+import java.util.Scanner;
+
+//Faça um programa para calcular o estoque médio de uma peça, sendo que: 
+//ESTOQUE MÉDIO = (QUANTIDADE_MÍNIMA + QUANTIDADE_MÁXIMA) / 2. 
+
+public class exercicio01 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("====== Estoque Médio ======");
+		System.out.println("Informe a quantidade mínima: ");
+		int qntMinima = sc.nextInt();
+		System.out.println("Informe a quantidade máxima: ");
+		int qntMaxima = sc.nextInt();
+		int estMedio = (qntMinima + qntMaxima) / 2;
+		System.out.println("Estoque médio: "+estMedio);
+		
+		sc.close();
+	}
+
+}
